@@ -46,6 +46,12 @@ class App extends React.Component {
     this.setState({ grades: grades });
   }
 
+  addStudent (studentName) {
+    this.setState({
+      students: this.state.students.concat(studentName)
+    });
+  }
+
   render() {
     let tabChoice = <div />;
 
